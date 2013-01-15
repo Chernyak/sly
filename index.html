@@ -19,8 +19,8 @@
 
 			<div class="download">
 				<h4>Download latest</h4>
-				<a href="//github.com/Darsain/sly/raw/master/jquery.sly.js" class="left"><span>Development</span></a>
-				<a href="//github.com/Darsain/sly/raw/master/jquery.sly.min.js" class="right"><span>Production</span></a>
+				<a href="//github.com/Darsain/sly/raw/master/dist/jquery.sly.js" class="left"><span>Development</span></a>
+				<a href="//github.com/Darsain/sly/raw/master/dist/jquery.sly.min.js" class="right"><span>Production</span></a>
 			</div>
 
 			<a href="//github.com/Darsain/sly" class="repo ir">Repository &amp; Documentation on Github</a>
@@ -45,7 +45,7 @@
 					<div class="handle"></div>
 				</div>
 
-				<div class="sly" data-options='{ "horizontal": 1, "itemNav": "basic", "dragHandle": 1, "drag": 1, "startAt": 3, "scrollBy": 1 }'>
+				<div class="sly" data-options='{ "horizontal": 1, "itemNav": "basic", "dragHandle": 1, "dragging": 1, "startAt": 3, "scrollBy": 1 }'>
 					<ul class="big cfix" data-items="30"></ul>
 				</div>
 
@@ -77,11 +77,11 @@
 				</div>
 
 <pre class="prettyprint lang-js">
-$frame.sly({
+$('#frame').sly({
 	horizontal: 1,
 	itemNav: "basic",
 	dragHandle: 1,
-	drag: 1,
+	dragging: 1,
 	startAt: 3,
 	scrollBy: 1
 });
@@ -97,7 +97,7 @@ $frame.sly({
 					<div class="handle"></div>
 				</div>
 
-				<div class="sly" data-options='{ "horizontal": 1, "itemNav": "smart", "dragHandle": 1, "dynamicHandle": 1, "drag": 1, "startAt": 3, "scrollBy": 1, "speed": 300 }'>
+				<div class="sly" data-options='{ "horizontal": 1, "itemNav": "smart", "dragHandle": 1, "dynamicHandle": 1, "dragging": 1, "startAt": 3, "scrollBy": 1, "speed": 300 }'>
 					<ul class="big cfix" data-items="30"></ul>
 				</div>
 
@@ -129,12 +129,12 @@ $frame.sly({
 				</div>
 
 <pre class="prettyprint lang-js">
-$frame.sly({
+$('#frame').sly({
 	horizontal: 1,
 	itemNav: "smart",
 	dragHandle: 1,
 	dynamicHandle: 1,
-	drag: 1,
+	dragging: 1,
 	startAt: 3,
 	scrollBy: 1,
 	speed: 300
@@ -151,7 +151,7 @@ $frame.sly({
 					<div class="handle"></div>
 				</div>
 
-				<div class="sly" data-options='{ "horizontal": 1, "itemNav": "centered", "dragHandle": 1, "dynamicHandle": 1, "drag": 1, "scrollBy": 1, "speed": 300, "easing": "easeOutExpo" }'>
+				<div class="sly" data-options='{ "horizontal": 1, "itemNav": "centered", "dragHandle": 1, "dynamicHandle": 1, "dragging": 1, "scrollBy": 1, "speed": 300, "easing": "easeOutExpo" }'>
 					<ul class="big cfix" data-items="30"></ul>
 				</div>
 
@@ -181,12 +181,12 @@ $frame.sly({
 				</div>
 
 <pre class="prettyprint lang-js">
-$frame.sly({
+$('#frame').sly({
 	horizontal: 1,
 	itemNav: "centered",
 	dragHandle: 1,
 	dynamicHandle: 1,
-	drag: 1,
+	dragging: 1,
 	scrollBy: 1,
 	speed: 300,
 	easing: 'easeOutExpo'
@@ -203,7 +203,7 @@ $frame.sly({
 					<div class="handle"></div>
 				</div>
 
-				<div class="sly" data-options='{ "horizontal": 1, "itemNav": "forceCentered", "dragHandle": 1, "dynamicHandle": 1, "drag": 1, "scrollBy": 1, "speed": 500, "easing": "easeOutBack" }'>
+				<div class="sly" data-options='{ "horizontal": 1, "itemNav": "forceCentered", "dragHandle": 1, "dynamicHandle": 1, "dragging": 1, "scrollBy": 1, "speed": 500, "easing": "easeOutBack" }'>
 					<ul class="big cfix" data-items="10"></ul>
 				</div>
 
@@ -233,12 +233,12 @@ $frame.sly({
 				</div>
 
 <pre class="prettyprint lang-js">
-$frame.sly({
+$('#frame').sly({
 	horizontal: 1,
 	itemNav: "forceCentered",
 	dragHandle: 1,
 	dynamicHandle: 1,
-	drag: 1,
+	dragging: 1,
 	scrollBy: 1,
 	speed: 500,
 	easing: "easeOutBack" // with jQuery Easing plugin
@@ -255,7 +255,7 @@ $frame.sly({
 					<div class="handle"></div>
 				</div>
 
-				<div class="sly" data-options='{ "horizontal": 1, "itemNav": "basic", "dragHandle": 1, "dynamicHandle": 1, "drag": 1, "scrollBy": 1, "speed": 300, "cycleBy": "pages", "cycleInterval": 1000, "startPaused": 1, "pauseOnHover": 1 }'>
+				<div class="sly" data-options='{ "horizontal": 1, "itemNav": "basic", "dragHandle": 1, "dynamicHandle": 1, "dragging": 1, "scrollBy": 1, "speed": 300, "cycleBy": "pages", "cycleInterval": 1000, "startPaused": 1, "pauseOnHover": 1 }'>
 					<ul class="big cfix" data-items="10"></ul>
 				</div>
 
@@ -287,12 +287,12 @@ $frame.sly({
 				</div>
 
 <pre class="prettyprint lang-js">
-$frame.sly({
+$('#frame').sly({
 	horizontal: 1,
 	itemNav: "basic",
 	dragHandle: 1,
 	dynamicHandle: 1,
-	drag: 1,
+	dragging: 1,
 	scrollBy: 1,
 	speed: 300,
 	cycleBy: 'pages',
@@ -377,7 +377,7 @@ $frame.sly({
 				</div>
 
 <pre class="prettyprint lang-js">
-$frame.sly({
+$('#frame').sly({
 	horizontal: 1,
 	itemNav: 'forceCentered',
 	speed: 300,
@@ -399,7 +399,7 @@ $frame.sly({
 					<div class="handle"></div>
 				</div>
 
-				<div class="sly" data-options='{ "itemNav": "smart", "dragHandle": 1, "dynamicHandle": 1, "drag": 1, "speed": 300, "startAt": 10, "scrollBy": 1, "elasticBounds": 1 }'>
+				<div class="sly" data-options='{ "itemNav": "smart", "dragHandle": 1, "dynamicHandle": 1, "dragging": 1, "speed": 300, "startAt": 10, "scrollBy": 1, "elasticBounds": 1 }'>
 					<ul class="big cfix" data-items="30"></ul>
 				</div>
 
@@ -426,11 +426,11 @@ $frame.sly({
 				</div>
 
 <pre class="prettyprint lang-js">
-$frame.sly({
+$('#frame').sly({
 	itemNav: "smart",
 	dragHandle: 1,
 	dynamicHandle: 1,
-	drag: 1,
+	dragging: 1,
 	speed: 300,
 	startAt: 10,
 	scrollBy: 1,
@@ -523,7 +523,7 @@ cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non pr
 				</div>
 
 <pre class="prettyprint lang-js">
-$frame.sly({
+$('#frame').sly({
 	scrollBy: 100,
 	dragHandle: 1,
 	dynamicHandle: 1,
@@ -569,7 +569,7 @@ $('#frame').sly('on', 'move', function (pos) {
 	// If close to the end, append new items
 	if (pos.cur > pos.max - 100) {
 		populate($ul, 10);
-		$frame.sly('reload');
+		$(this).sly('reload');
 	}
 });
 </pre>
@@ -591,8 +591,8 @@ $('#frame').sly('on', 'move', function (pos) {
 	<script>window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>')</script>
 
 	<!-- scripts -->
-	<script src="jquery.sly.min.js"></script>
 	<script src="js/vendor/plugins.js"></script>
+	<script src="js/jquery.sly.min.js"></script>
 	<script src="js/main.js"></script>
 	<!-- end scripts -->
 </body>
