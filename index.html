@@ -567,7 +567,7 @@ $('#frame').sly({
 });
 $('#frame').sly('on', 'move', function (pos) {
 	// If close to the end, append new items
-	if (pos.cur > pos.max - 100) {
+	if (pos.cur > pos.end - 100) {
 		populate($ul, 10);
 		$(this).sly('reload');
 	}

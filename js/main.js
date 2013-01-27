@@ -51,7 +51,7 @@ jQuery(function($){
 				$frame.sly({ itemNav: 'basic', speed: 300, scrollBy: 1, dynamicHandle: 1, scrollBar: $scrollbar }, {
 					move: function (pos) {
 						// Append more items
-						if (pos.dest > pos.max - 100) {
+						if (pos.dest > pos.end - 100) {
 							populate($slidee, 10, $slidee.children().length-1);
 							$frame.sly('reload');
 						}
